@@ -1,10 +1,42 @@
 :root {
-	--primary-color: #513252;
-	--secondary-color: #7A4069;
-	--background-color: #FFC18E;
-	--accent-color: #CA4E79;
+	/* --primary-color: hsl(298, 24%, 26%);
+	--secondary-color: hsl(318, 31%, 36%);
+	--background-color: hsl(270, 100%, 78%);
+	--accent-color: #CA4E79; */
+
+	--first-color: hsl(195, 32%, 90%);
+	--second-color: hsl(143, 20%, 75%);
+	--third-color: hsl(6, 71%, 77%);
+	--fourth-color: hsl(0, 54%, 54%);
 }
 
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
 body {
-	background-color: var(--background-color);
+	background-color: var(--fourth-color);
+	background-image: linear-gradient(var(--fourth-color), var(--third-color));
+	background-attachment: fixed;
+}
+
+.contests {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.length {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--second-color);
+	padding-top: 2rem;
 }

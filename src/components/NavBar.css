@@ -1,0 +1,38 @@
+:root {
+	--first-color: hsl(195, 32%, 90%);
+	--second-color: hsl(143, 20%, 75%);
+	--third-color: hsl(6, 71%, 77%);
+	--fourth-color: hsl(0, 54%, 54%);
+}
+
+.navigation {
+	color: var(--first-color);
+	background-color: var(--fourth-color);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+	gap: 2.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.link {
+	--font-family: 'Press Start 2P';
+	--fourth-color: hsl(0, 54%, 30%);
+
+	color: var(--second-color);
+	font-family: var(--font-family);
+	font-size: 1.5rem;
+	box-shadow: 2px 2px 30px var(--fourth-color);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: .5rem;
+	margin: 1rem;
+}
+
+.link:hover {
+	color: var(--first-color);
+}
+

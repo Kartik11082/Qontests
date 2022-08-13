@@ -1,0 +1,30 @@
+.contest {
+    --first-color: hsl(195, 32%, 90%);
+    --second-color: hsl(143, 20%, 75%);
+    --third-color: hsl(6, 71%, 77%);
+    --fourth-color: hsl(0, 54%, 54%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 30px var(--fourth-color);
+    max-width: max-content;
+}
+
+.contest:hover {
+    outline: .5rem solid var(--fourth-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+p {
+    color: var(--first-color);
+}
