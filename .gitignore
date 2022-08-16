@@ -53,3 +53,9 @@ dist/
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Firebase
+.firebase
+.firebaserc
+firebase.json
+

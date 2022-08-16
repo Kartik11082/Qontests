@@ -28,3 +28,19 @@ a {
 p {
     color: var(--first-color);
 }
+
+.loading {
+	margin-top: 3rem;
+	border: 1rem solid var(--third-color);
+	border-top: var(--first-color);
+	width: 7.5rem;
+	height: 7.5rem;
+	border-radius: 50%;
+	font-size: 2rem;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
